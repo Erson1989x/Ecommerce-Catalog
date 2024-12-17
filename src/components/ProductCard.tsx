@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isDarkMode }) => {
         {product.title}
       </h2>
       <p
-        className={`mb-2 line-clamp-3 h-16 overflow-hidden ${
+        className={`mb-2 line-clamp-5 h-30 overflow-hidden ${
           isDarkMode ? "text-gray-300" : "text-gray-600"
         }`}
       >
@@ -38,11 +38,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isDarkMode }) => {
         Rating: {product.rating.rate} ★ out of 5 ({product.rating.count}{" "}
         reviews)
       </p>
-      <div className="mt-auto">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
-          View Details
-        </button>
-      </div>
     </div>
   );
 };
